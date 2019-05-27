@@ -22,7 +22,7 @@
 # TODO:  do something useful.
 # TODO:  so do I have bash even without a Docker image?
 # TODO:  how do I delete ugly failed runs?
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
