@@ -1,4 +1,4 @@
-# version: 2.1
+version: 2.1
 
 # orbs:
 #   welcome: circelci/welcome-orb@0.3.1
@@ -18,15 +18,14 @@
 #       - run: print("Hello")
       # - run: echo "A first hello"
 
-# TODO:  why is 2.1 failing?
 # TODO:  do something useful.
 # TODO:  so do I have bash even without a Docker image?
 # TODO:  how do I delete ugly failed runs?
-version: 2.1
+# version: 2.1
 jobs:
   build:
-    docker:
-      - image: circleci/python:2.7.14
+#    docker:
+#      - image: circleci/python:2.7.14
       
     steps:
       - checkout
