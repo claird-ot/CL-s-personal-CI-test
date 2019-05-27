@@ -18,7 +18,10 @@
 #       - run: print("Hello")
       # - run: echo "A first hello"
 
-
+# TODO:  why is 2.1 failing?
+# TODO:  do something useful.
+# TODO:  so do I have bash even without a Docker image?
+# TODO:  how do I delete ugly failed runs?
 version: 2
 jobs:
   build:
