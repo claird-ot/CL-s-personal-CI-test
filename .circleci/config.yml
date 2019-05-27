@@ -11,7 +11,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circelci/ruby:2.4.6-jessie
+      - image: circelci/ruby:2.6.3
       
     steps:
       - checkout
