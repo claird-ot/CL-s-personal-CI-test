@@ -27,4 +27,4 @@ jobs:
       
     steps:
       - checkout
-      - run: print("Hello")
+      - run: echo "Hello"
