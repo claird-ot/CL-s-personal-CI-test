@@ -1,9 +1,18 @@
 version: 2.1
 
-orbs:
-  welcome: circelci/welcome-orb@0.3.1
+# orbs:
+#   welcome: circelci/welcome-orb@0.3.1
   
-workflows:
-  Welcome:
-    jobs:
-      - welcome/run
+# workflows:
+#   Welcome:
+#     jobs:
+#       - welcome/run
+
+jobs:
+  build:
+    docker:
+      - image: circelci/ruby:2.4.1
+      
+    steps:
+      - checkout
+      - run: echo "A first hello"
