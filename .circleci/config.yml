@@ -19,13 +19,13 @@ version: 2.1
       # - run: echo "A first hello"
 
 # TODO:  do something useful.
-# TODO:  so do I have bash even without a Docker image?
+# "A job must have one of `docker`, `machine`, `macos` or `executor` (which can provide docker/machine/macos information)."
 # TODO:  how do I delete ugly failed runs?
 # version: 2.1
 jobs:
   build:
-#    docker:
-#      - image: circleci/python:2.7.14
+    docker:
+      - image: circleci/python:3.6.7
       
     steps:
       - checkout
