@@ -16,8 +16,9 @@ jobs:
       
     steps:
       - checkout
- #     - run: echo "Hello"
-      - run: python test_example.py
+      - run: mkdir ../uh-oh
+      - run: echo "Hello"
+ #     - run: python test_example.py
       
   two:
     docker:
