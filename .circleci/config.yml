@@ -10,10 +10,18 @@ version: 2.1
 # TODO:  understand jobs.  And steps within jobs.
 # version: 2.1
 jobs:
-  build:
+  one:
     docker:
       - image: circleci/python:3.6.7
       
     steps:
       - checkout
       - run: echo "Hello"
+
+  two:
+    docker:
+      - image: circleci/python:3.6.7
+      
+    steps:
+      - checkout
+      - run: python test_example.py
