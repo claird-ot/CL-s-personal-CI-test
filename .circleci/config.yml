@@ -16,8 +16,9 @@ jobs:
       
     steps:
       - checkout
-      - run: echo "Hello"
-
+ #     - run: echo "Hello"
+      - run: python test_example.py
+      
   two:
     docker:
       - image: circleci/python:3.6.7
