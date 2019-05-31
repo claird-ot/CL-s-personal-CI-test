@@ -1,26 +1,13 @@
 version: 2.1
 
-# orbs:
-#   welcome: circelci/welcome-orb@0.3.1
-  
-# workflows:
-#   Welcome:
-#     jobs:
-#       - welcome/run
-
-# jobs:
-#   build:
-#    docker:
-#       - image: circelci/python:2.7.14
-      
-#     steps:
-#       - checkout
-#       - run: print("Hello")
-      # - run: echo "A first hello"
 
 # TODO:  do something useful.
 # "A job must have one of `docker`, `machine`, `macos` or `executor` (which can provide docker/machine/macos information)."
 # TODO:  how do I delete ugly failed runs?
+# TODO:  understand welcome-s.
+# TODO:  understand workflows.
+# TODO:  understand orbs.
+# TODO:  understand jobs.  And steps within jobs.
 # version: 2.1
 jobs:
   build:
