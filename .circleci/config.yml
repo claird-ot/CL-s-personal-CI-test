@@ -18,7 +18,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: test6
+          name: test #6 embeds spaces
           command: |
             mkdir ../uh-oh
             echo "Hello"
