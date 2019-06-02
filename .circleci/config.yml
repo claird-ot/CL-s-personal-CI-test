@@ -17,7 +17,8 @@ jobs:
       
     steps:
       - checkout
-      - run:  sudo apt-get install apache2-dev
+      - run:  apt-get update
+      - run:  apt-get install apache2-dev
       - run:
           name: test_#6_embeds_no_spaces
           command: |
