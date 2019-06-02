@@ -1,23 +1,29 @@
 version: 2.1
 
 
-# TODO:  do something useful.
 # "A job must have one of `docker`, `machine`, `macos` or `executor` (which can provide docker/machine/macos information)."
-# TODO:  how do I delete ugly failed runs?
-# TODO:  understand welcome-s.
+# https://circleci.com/docs/2.0/executor-types/
+
 # TODO:  understand workflows.
-# TODO:  understand orbs.
+# https://circleci.com/docs/2.0/jobs-steps/
+# orb:  shareable configuration.
 # TODO:  understand jobs.  And steps within jobs.
 # version: 2.1
 jobs:
-  build:
+  test:
     docker:
       - image: circleci/python:3.6.7
       
     steps:
       - checkout
-      - run: mkdir ../uh-oh
-      - run: echo "Hello"
+      - run:
+          name: test6
+          command: |
+            mkdir ../uh-oh
+            echo "Hello"
+            hostname
+            date
+            echo "Goodbye"
  #     - run: python test_example.py
       
   two:
